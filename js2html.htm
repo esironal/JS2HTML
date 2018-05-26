@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Code in JavaScript - JS2HTML</title>
+    <meta charset="utf-8" />
+    <link href="projects.css" rel="stylesheet" />
+    <style>
+        .grid-container
+        {
+            display: grid;
+  			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: auto 32px 32px;
+            grid-column-gap: 16px;
+            grid-row-gap: 16px;
+			margin: 8px;
+    		height: calc(100% - 20px);
+    		width: calc(100% - 20px);
+        }
+        .cell
+        {
+            justify-self: stretch;
+            align-self: center;
+			padding: 8px;
+    		height: calc(100% - 8px);
+			border: 1px solid #808080;
+        }
+    </style>
+</head>
+
+<body>
+
+	<div class="maindiv">
+
+		<div class="banner"></div>
+
+		<div class="linkpanel"><a href="http://www.code-in-javascript.com" target="_blank">code-in-javascript.com</a></div>
+
+		<div class="contentdiv" id="maindiv">
+    		<div class="grid-container">
+        		<div class="cell"><textarea id="inputtext" style="height: calc(100% - 4px); width: calc(100% - 4px); resize: none;"></textarea></div>
+        		<div class="cell"><textarea id="outputtext" readonly style="height: calc(100% - 4px); width: calc(100% - 4px); resize: none;"></textarea></div>
+        		<div class="cell"><div id="gobutton" class="button">Go...</div></div>
+        		<div class="cell"><div id="copybutton" class="button">Copy to clipboard</div></div>
+        		<div class="cell"><div id="clearinputbutton" class="button">Clear</div></div>
+        		<div class="cell"><div id="clearoutputbutton" class="button">Clear</div></div>
+    		</div></div>
+
+	</div>
+
+	</div>
+
+    <script src="js2html.js"></script>
+
+</body>
